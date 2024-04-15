@@ -1,16 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import Map from "./Map.js";
+import Form from "./Form.js";
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>Hey this is My World</p>
-                <a className="App-link" href="https://saran.selfmade.one" target="_blank" rel="noopener noreferrer">Saran</a>
-            </header>
-        </div>
-    );
+class App extends Component {
+    render() {
+        return (
+            <>
+                <Form />
+                <Map />
+            </>
+        )
+    }
 }
 
 export default App;
